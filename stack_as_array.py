@@ -12,6 +12,6 @@ class Stack(list):
             # does not support a stack of lists
             self.append(content)
 
-    def get_top(self):
+    def view_top(self):
         """View the item at the top of the stack without removing it."""
         return self[-1]
