@@ -1,7 +1,7 @@
 """
 Problem: you have an array of socks. You need to figure out how many pairs of each pattern you have.
 
-socks = ['chickens', 'flowers', 'red', 'red', 'flowers', 'chickens', 'flowers', 'christmas']
+socks = ['chickens', 'flowers', 'red', 'red', 'flowers', 'chickens', 'flowers', 'christmas', 'flowers']
 
 """
 
@@ -28,4 +28,9 @@ socks = ['chickens', 'flowers', 'red', 'red', 'flowers', 'chickens', 'flowers', 
 
 pairs = get_pairs(socks)
 
-print(pairs['flowers'])
+assert pairs['flowers'] == 2
+assert pairs['chickens'] == 1
+assert pairs['red'] == 1
+assert pairs['christmas'] == 0
+
+print("Solution works!")
